@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+  margin-top: 0.25rem;
+  color: #afb7be;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding: 0 1rem;
+  margin-left: 0.5rem;
+  scrollbar-width: none;
+}
+.nav::-webkit-scrollbar {
+  display: none;
+}
+.nav_item {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  margin-right: 2rem;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.nav_item:active {
+  transform: scale(0.8);
+}
+@media screen and (min-width: 576px) {
+  .nav_item:hover {
+    transform: scale(1.2);
+  }
+  .nav_item:active {
+    transform: scale(0.9);
+  }
+  .nav {
+    margin-left: 1.25rem;
+  }
+  .nav_item {
+    margin-right: 3rem;
+  }
+}
+@media screen and (min-width: 991px) {
+  .nav {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+  }
+  .nav_item {
+    margin-right: 5rem;
+    font-size: 1.5rem;
+  }
+}
