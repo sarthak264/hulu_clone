@@ -16,7 +16,6 @@ const Thumbnail = forwardRef(({ data }, ref) => {
       />
       <div className="details">
         <h3>{data.title || data.original_name}</h3>
-        {/* <p className="description">{data.overview}</p> */}
         <div className="hidden">
           <p>
             {data.media_type && `${data.media_type} `}&middot;{" "}
